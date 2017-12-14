@@ -62,6 +62,153 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode-461Hamming Distance" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/14/leetcode-461Hamming Distance/" class="article-date">
+  <time datetime="2017-12-14T07:20:38.020Z" itemprop="datePublished">2017-12-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/14/leetcode-461Hamming Distance/">leetcode-461 Hamming Distance</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="��L"><a href="#��L" class="headerlink" title="��Ŀ"></a>��Ŀ</h2><p>The Hamming distance between two integers is the number of positions at which the corresponding bits are different.</p>
+<p>Given two integers x and y, calculate the Hamming distance.</p>
+<p>Note:<br>0 �� x, y &lt; 231.</p>
+<p>Example:</p>
+<p>Input: x = 1, y = 4</p>
+<p>Output: 2</p>
+<p>Explanation:<br>1   (0 0 0 1)<br>4   (0 1 0 0)<br>       ?   ?</p>
+<p>The above arrows point to positions where the corresponding bits are different.</p>
+<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>����ÿ�ζ����һλ���бȽϣ���Ȼ�Ƚ��Ƿ���ͬ��������Ӷ�2ȡ��</p>
+<h2 id="Code��python��"><a href="#Code��python��" class="headerlink" title="Code��python��"></a>Code��python��</h2><p>‘’’<br>class Solution(object):<br>    def hammingDistance(self, x, y):<br>        “””<br>        :type x: int<br>        :type y: int<br>        :rtype: int<br>        “””<br>        def func(x, y, dis):<br>            if (x+y) == 0:<br>                return dis<br>            if (x+y)%2 == 1:<br>                dis = dis + 1<br>            return func(x//2, y//2, dis)</p>
+<pre><code>dis = 0
+r = func(x, y, dis)
+return r
+</code></pre><p>‘’’</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/14/leetcode-461Hamming Distance/" data-id="cjb65o89i00037sq1ozdkc3he" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-leetcode-461Hamming Distance - 副本" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/14/leetcode-461Hamming Distance - 副本/" class="article-date">
+  <time datetime="2017-12-14T07:20:38.004Z" itemprop="datePublished">2017-12-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/14/leetcode-461Hamming Distance - 副本/">leetcode-</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="��L"><a href="#��L" class="headerlink" title="��Ŀ"></a>��Ŀ</h2><p>���㸡���б�����</p>
+<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><h2 id="Code��python��"><a href="#Code��python��" class="headerlink" title="Code��python��"></a>Code��python��</h2><p>‘’’<br>nums = [0,0,1]<br>numlen = len(nums)<br>i = 0<br>j = numlen - 1</p>
+<p>while (i &lt;= j):<br>    while (nums[i] &gt; 0):<br>        i += 1<br>        if i &gt; numlen - 1:<br>            break<br>    while (nums[j] == 0):<br>        j -= 1<br>        if j &lt; 0:<br>            break</p>
+<pre><code>if i &lt; j:
+    for ii in range(i, j):
+        nums[ii] = nums[ii + 1]
+    nums[j] = 0
+i += 1
+j -= 1
+</code></pre><p>print(nums)<br>‘’’</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/14/leetcode-461Hamming Distance - 副本/" data-id="cjb65o89i00027sq1gxdqakh2" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-leetcode-338" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/14/leetcode-338/" class="article-date">
+  <time datetime="2017-12-14T07:20:37.988Z" itemprop="datePublished">2017-12-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/14/leetcode-338/">leetcode-338</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Given a non negative integer number num. For every numbers i in the range 0&lt;=i&lt;=num calculate the number of 1’s in their binary representation and return them as an array.</p>
+<p>Example:<br>For num = 5 you should return [0,1,1,2,1,2].</p>
+<p>Follow up:</p>
+<p>It is very easy to come up with a solution with run time O(n*sizeof(integer)). But can you do it in linear time O(n) /possibly in a single pass?<br>Space complexity should be O(n).<br>Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.<br>Credits:<br>Special thanks to @ syedee for adding this problem and creating all test cases.</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h2 id="Code-python"><a href="#Code-python" class="headerlink" title="Code python"></a>Code python</h2><p>‘’’<br>class Solution(object):<br>    def countBits(self, num):<br>        “””<br>        :type num: int<br>        :rtype: List[int]<br>        “””<br>        result = []<br>        ‘’’<br>        for i in range(num+1):<br>            tmp = i<br>            count = 0<br>            while tmp != 0 :<br>                count = count + tmp%2<br>                tmp = tmp / 2<br>            result.append(count)<br>        ‘’’</p>
+<pre><code>def func(num):
+    if num == 0 or num == 1:
+        return num
+    return ((num % 2) + func(num/2))
+
+for i in range(num+1):
+    result.append(func(i))
+
+return result
+</code></pre><p>‘’’</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/14/leetcode-338/" data-id="cjb65o89i00007sq10k91im54" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Hello-World-0" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/12/14/Hello-World-0/" class="article-date">
@@ -172,6 +319,18 @@
     <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/12/14/leetcode-461Hamming Distance/">leetcode-461 Hamming Distance</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/14/leetcode-461Hamming Distance - 副本/">leetcode-</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/14/leetcode-338/">leetcode-338</a>
+          </li>
         
           <li>
             <a href="/2017/12/14/Hello-World-0/">Hello World</a>

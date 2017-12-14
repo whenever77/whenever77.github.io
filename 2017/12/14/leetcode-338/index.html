@@ -5,16 +5,19 @@
   
 
   
-  <title>Hello World | Whenever</title>
+  <title>leetcode-338 | Whenever</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/12/14/Hello-World-0/index.html">
+  <meta name="description" content="题目Given a non negative integer number num. For every numbers i in the range 0&amp;lt;=i&amp;lt;=num calculate the number of 1’s in their binary representation and return them as an array. Example:For num = 5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="leetcode-338">
+<meta property="og:url" content="http://yoursite.com/2017/12/14/leetcode-338/index.html">
 <meta property="og:site_name" content="Whenever">
+<meta property="og:description" content="题目Given a non negative integer number num. For every numbers i in the range 0&amp;lt;=i&amp;lt;=num calculate the number of 1’s in their binary representation and return them as an array. Example:For num = 5">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-14T02:24:07.996Z">
+<meta property="og:updated_time" content="2017-09-22T14:59:10.814Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
+<meta name="twitter:title" content="leetcode-338">
+<meta name="twitter:description" content="题目Given a non negative integer number num. For every numbers i in the range 0&amp;lt;=i&amp;lt;=num calculate the number of 1’s in their binary representation and return them as an array. Example:For num = 5">
   
     <link rel="alternate" href="/atom.xml" title="Whenever" type="application/atom+xml">
   
@@ -61,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-Hello-World-0" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-leetcode-338" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/12/14/Hello-World-0/" class="article-date">
-  <time datetime="2017-12-14T02:24:07.000Z" itemprop="datePublished">2017-12-14</time>
+    <a href="/2017/12/14/leetcode-338/" class="article-date">
+  <time datetime="2017-12-14T07:20:37.988Z" itemprop="datePublished">2017-12-14</time>
 </a>
     
   </div>
@@ -75,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      leetcode-338
     </h1>
   
 
@@ -83,11 +86,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Given a non negative integer number num. For every numbers i in the range 0&lt;=i&lt;=num calculate the number of 1’s in their binary representation and return them as an array.</p>
+<p>Example:<br>For num = 5 you should return [0,1,1,2,1,2].</p>
+<p>Follow up:</p>
+<p>It is very easy to come up with a solution with run time O(n*sizeof(integer)). But can you do it in linear time O(n) /possibly in a single pass?<br>Space complexity should be O(n).<br>Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.<br>Credits:<br>Special thanks to @ syedee for adding this problem and creating all test cases.</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h2 id="Code-python"><a href="#Code-python" class="headerlink" title="Code python"></a>Code python</h2><p>‘’’<br>class Solution(object):<br>    def countBits(self, num):<br>        “””<br>        :type num: int<br>        :rtype: List[int]<br>        “””<br>        result = []<br>        ‘’’<br>        for i in range(num+1):<br>            tmp = i<br>            count = 0<br>            while tmp != 0 :<br>                count = count + tmp%2<br>                tmp = tmp / 2<br>            result.append(count)<br>        ‘’’</p>
+<pre><code>def func(num):
+    if num == 0 or num == 1:
+        return num
+    return ((num % 2) + func(num/2))
+
+for i in range(num+1):
+    result.append(func(i))
+
+return result
+</code></pre><p>‘’’</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/14/Hello-World-0/" data-id="cjb655fxq0000d8q1tlg7kjir" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2017/12/14/leetcode-338/" data-id="cjb65o89i00007sq10k91im54" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -96,17 +114,17 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/12/14/leetcode-338/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/12/14/leetcode-461Hamming Distance - 副本/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Neuer</strong>
       <div class="article-nav-title">
         
-          leetcode-338
+          leetcode-
         
       </div>
     </a>
   
   
-    <a href="/2017/12/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/12/14/Hello-World-0/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Älter</strong>
       <div class="article-nav-title">Hello World</div>
     </a>

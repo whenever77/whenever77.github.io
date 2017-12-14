@@ -5,16 +5,19 @@
   
 
   
-  <title>Hello World | Whenever</title>
+  <title>leetcode-461 Hamming Distance | Whenever</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/12/14/Hello-World-0/index.html">
+  <meta name="description" content="��ĿThe Hamming distance between two integers is the number of positions at which the corresponding bits are different. Given two integers x and y, calculate the Hamming distance. Note:0 �� x, y &amp;lt; 2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="leetcode-461 Hamming Distance">
+<meta property="og:url" content="http://yoursite.com/2017/12/14/leetcode-461Hamming Distance/index.html">
 <meta property="og:site_name" content="Whenever">
+<meta property="og:description" content="��ĿThe Hamming distance between two integers is the number of positions at which the corresponding bits are different. Given two integers x and y, calculate the Hamming distance. Note:0 �� x, y &amp;lt; 2">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-14T02:24:07.996Z">
+<meta property="og:updated_time" content="2017-07-11T07:03:43.985Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
+<meta name="twitter:title" content="leetcode-461 Hamming Distance">
+<meta name="twitter:description" content="��ĿThe Hamming distance between two integers is the number of positions at which the corresponding bits are different. Given two integers x and y, calculate the Hamming distance. Note:0 �� x, y &amp;lt; 2">
   
     <link rel="alternate" href="/atom.xml" title="Whenever" type="application/atom+xml">
   
@@ -61,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-Hello-World-0" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-leetcode-461Hamming Distance" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/12/14/Hello-World-0/" class="article-date">
-  <time datetime="2017-12-14T02:24:07.000Z" itemprop="datePublished">2017-12-14</time>
+    <a href="/2017/12/14/leetcode-461Hamming Distance/" class="article-date">
+  <time datetime="2017-12-14T07:20:38.020Z" itemprop="datePublished">2017-12-14</time>
 </a>
     
   </div>
@@ -75,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      leetcode-461 Hamming Distance
     </h1>
   
 
@@ -83,11 +86,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="��L"><a href="#��L" class="headerlink" title="��Ŀ"></a>��Ŀ</h2><p>The Hamming distance between two integers is the number of positions at which the corresponding bits are different.</p>
+<p>Given two integers x and y, calculate the Hamming distance.</p>
+<p>Note:<br>0 �� x, y &lt; 231.</p>
+<p>Example:</p>
+<p>Input: x = 1, y = 4</p>
+<p>Output: 2</p>
+<p>Explanation:<br>1   (0 0 0 1)<br>4   (0 1 0 0)<br>       ?   ?</p>
+<p>The above arrows point to positions where the corresponding bits are different.</p>
+<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>����ÿ�ζ����һλ���бȽϣ���Ȼ�Ƚ��Ƿ���ͬ��������Ӷ�2ȡ��</p>
+<h2 id="Code��python��"><a href="#Code��python��" class="headerlink" title="Code��python��"></a>Code��python��</h2><p>‘’’<br>class Solution(object):<br>    def hammingDistance(self, x, y):<br>        “””<br>        :type x: int<br>        :type y: int<br>        :rtype: int<br>        “””<br>        def func(x, y, dis):<br>            if (x+y) == 0:<br>                return dis<br>            if (x+y)%2 == 1:<br>                dis = dis + 1<br>            return func(x//2, y//2, dis)</p>
+<pre><code>dis = 0
+r = func(x, y, dis)
+return r
+</code></pre><p>‘’’</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/14/Hello-World-0/" data-id="cjb655fxq0000d8q1tlg7kjir" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2017/12/14/leetcode-461Hamming Distance/" data-id="cjb65o89i00037sq1ozdkc3he" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -96,19 +113,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/12/14/leetcode-338/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
-      <div class="article-nav-title">
-        
-          leetcode-338
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/12/14/leetcode-461Hamming Distance - 副本/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">leetcode-</div>
     </a>
   
 </nav>
