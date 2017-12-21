@@ -160,9 +160,7 @@
       
         <p>今天要在windows下实现文件的拷贝，写了个python，发现实际只要一行</p>
 <h2 id="shutil模块"><a href="#shutil模块" class="headerlink" title="shutil模块"></a>shutil模块</h2><p><code>copyfile(src, dst)</code> 可以实现文件的拷贝<br><code>move(src, dst)</code>  可以实现文件的移动   </p>
-<p>记得要先import<br><code>import shutil</code></p>
-<p><code>shutil.copyfile(&quot;a.py&quot;, &quot;b.py&quot;)    # 文件a复制为文件b  
-shutil.move(&quot;a.py&quot;, &quot;../&quot;)         # 文件a移动到父目录</code></p>
+<p>记得要先import<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import shutil  </span><br><span class="line"></span><br><span class="line">shutil.copyfile(&quot;a.py&quot;, &quot;b.py&quot;)    # 文件a复制为文件b    </span><br><span class="line">shutil.move(&quot;a.py&quot;, &quot;../&quot;)         # 文件a移动到父目录</span><br></pre></td></tr></table></figure></p>
 
       
 
