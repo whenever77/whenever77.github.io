@@ -142,6 +142,81 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-daily-201712" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/21/daily-201712/">每日小记之2017_12</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/21/daily-201712/" class="archive-article-date">
+  	<time datetime="2017-12-21T02:42:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2017-12-21<br>Atom预览莫名打不开，得是有bug，还是说打开三个md后就不能再开预览了？<br>手动给动词匹配word2vec好累啊，应该多加一条匹配tion的规则，就可以少操作好多了。</p>
+<p>2017-12-31<br>要过新年了，这个月最开心的事，坚持打卡的同时，也坚持了运动，希望再接再厉啦，至少要变得更加健康~</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">daily</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/21/daily-201712/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-multi-label" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -452,98 +527,6 @@
 
 
   
-    <article id="post-leetcode-338" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/14/leetcode-338/">leetcode-338</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/14/leetcode-338/" class="archive-article-date">
-  	<time datetime="2017-12-14T02:24:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Given a non negative integer number num. For every numbers i in the range 0&lt;=i&lt;=num calculate the number of 1’s in their binary representation and return them as an array.</p>
-<p>Example:<br>For num = 5 you should return [0,1,1,2,1,2].</p>
-<p>Follow up:</p>
-<p>It is very easy to come up with a solution with run time O(n*sizeof(integer)). But can you do it in linear time O(n) /possibly in a single pass?<br>Space complexity should be O(n).<br>Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.<br>Credits:<br>Special thanks to @ syedee for adding this problem and creating all test cases.</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h2 id="Code-python"><a href="#Code-python" class="headerlink" title="Code python"></a>Code python</h2><p>‘’’<br>class Solution(object):<br>    def countBits(self, num):<br>        “””<br>        :type num: int<br>        :rtype: List[int]<br>        “””<br>        result = []<br>        ‘’’<br>        for i in range(num+1):<br>            tmp = i<br>            count = 0<br>            while tmp != 0 :<br>                count = count + tmp%2<br>                tmp = tmp / 2<br>            result.append(count)<br>        ‘’’</p>
-<pre><code>def func(num):
-    if num == 0 or num == 1:
-        return num
-    return ((num % 2) + func(num/2))
-
-for i in range(num+1):
-    result.append(func(i))
-
-return result
-</code></pre><p>‘’’</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">code</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">leetcode</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/14/leetcode-338/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
@@ -641,15 +624,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">daily</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">影评</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">daily</a>
               </li>
              
               <li class="article-tag-list-item">
