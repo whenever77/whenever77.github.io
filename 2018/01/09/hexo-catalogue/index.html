@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 影评 | Whenever的博客</title>
+  <title>hexo目录的生成 | Whenever的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Whenever的博客">
-<meta property="og:url" content="http://yoursite.com/tags/影评/index.html">
+  <meta name="description" content="右侧悬浮目录看到一个大佬的hexo，右侧有个悬浮目录，觉得不错，打算来一个，然后照着教程修改。 1.修改css打开themes\yilia\source中的main.0cf68a.css文件，在文件末尾，添加123456789/* 新添加的 */#container .show-toc-btn,#container .toc-article&amp;#123;display:block&amp;#125;.toc">
+<meta name="keywords" content="code,伪程序猿">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo目录的生成">
+<meta property="og:url" content="http://yoursite.com/2018/01/09/hexo-catalogue/index.html">
 <meta property="og:site_name" content="Whenever的博客">
+<meta property="og:description" content="右侧悬浮目录看到一个大佬的hexo，右侧有个悬浮目录，觉得不错，打算来一个，然后照着教程修改。 1.修改css打开themes\yilia\source中的main.0cf68a.css文件，在文件末尾，添加123456789/* 新添加的 */#container .show-toc-btn,#container .toc-article&amp;#123;display:block&amp;#125;.toc">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-09T08:18:23.843Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Whenever的博客">
+<meta name="twitter:title" content="hexo目录的生成">
+<meta name="twitter:description" content="右侧悬浮目录看到一个大佬的hexo，右侧有个悬浮目录，觉得不错，打算来一个，然后照着教程修改。 1.修改css打开themes\yilia\source中的main.0cf68a.css文件，在文件末尾，添加123456789/* 新添加的 */#container .show-toc-btn,#container .toc-article&amp;#123;display:block&amp;#125;.toc">
   
     <link rel="alternative" href="/atom.xml" title="Whenever的博客" type="application/atom+xml">
   
@@ -140,64 +145,191 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-hexo-catalogue" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/articles/" class="archive-article-date">
-  	<time datetime="2017-12-14T02:24:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/articles/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      hexo目录的生成
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/01/09/hexo-catalogue/" class="archive-article-date">
+  	<time datetime="2018-01-09T07:55:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-09</time>
+</a>
+        
+      </header>
+    
+	<!-- 目录内容 -->
+			
+	<!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="右侧悬浮目录"><a href="#右侧悬浮目录" class="headerlink" title="右侧悬浮目录"></a>右侧悬浮目录</h2><p>看到一个大佬的hexo，右侧有个悬浮目录，觉得不错，打算来一个，然后照着教程修改。</p>
+<h3 id="1-修改css"><a href="#1-修改css" class="headerlink" title="1.修改css"></a>1.修改css</h3><p>打开<code>themes\yilia\source</code>中的<code>main.0cf68a.css</code>文件，在文件末尾，添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/* 新添加的 */</span><br><span class="line">#container .show-toc-btn,#container .toc-article&#123;display:block&#125;</span><br><span class="line">.toc-article&#123;z-index:100;background:#fff;border:1px solid #ccc;max-width:250px;min-width:150px;max-height:500px;overflow-y:auto;-webkit-box-shadow:5px 5px 2px #ccc;box-shadow:5px 5px 2px #ccc;font-size:12px;padding:10px;position:fixed;right:35px;top:129px&#125;.toc-article .toc-close&#123;font-weight:700;font-size:20px;cursor:pointer;float:right;color:#ccc&#125;.toc-article .toc-close:hover&#123;color:#000&#125;.toc-article .toc&#123;font-size:12px;padding:0;line-height:20px&#125;.toc-article .toc .toc-number&#123;color:#333&#125;.toc-article .toc .toc-text:hover&#123;text-decoration:underline;color:#2a6496&#125;.toc-article li&#123;list-style-type:none&#125;.toc-article .toc-level-1&#123;margin:4px 0&#125;.toc-article .toc-child&#123;&#125;@-moz-keyframes cd-bounce-1&#123;0%&#123;opacity:0;-o-transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1)&#125;60%&#123;opacity:1;-o-transform:scale(1.01);-webkit-transform:scale(1.01);-moz-transform:scale(1.01);-ms-transform:scale(1.01);transform:scale(1.01)&#125;100%&#123;-o-transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1)&#125;&#125;@-webkit-keyframes cd-bounce-1&#123;0%&#123;opacity:0;-o-transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1)&#125;60%&#123;opacity:1;-o-transform:scale(1.01);-webkit-transform:scale(1.01);-moz-transform:scale(1.01);-ms-transform:scale(1.01);transform:scale(1.01)&#125;100%&#123;-o-transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1)&#125;&#125;@-o-keyframes cd-bounce-1&#123;0%&#123;opacity:0;-o-transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1)&#125;60%&#123;opacity:1;-o-transform:scale(1.01);-webkit-transform:scale(1.01);-moz-transform:scale(1.01);-ms-transform:scale(1.01);transform:scale(1.01)&#125;100%&#123;-o-transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1)&#125;&#125;@keyframes cd-bounce-1&#123;0%&#123;opacity:0;-o-transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1)&#125;60%&#123;opacity:1;-o-transform:scale(1.01);-webkit-transform:scale(1.01);-moz-transform:scale(1.01);-ms-transform:scale(1.01);transform:scale(1.01)&#125;100%&#123;-o-transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1)&#125;&#125;.show-toc-btn&#123;display:none;z-index:10;width:30px;min-height:14px;overflow:hidden;padding:4px 6px 8px 5px;border:1px solid #ddd;border-right:none;position:fixed;right:40px;text-align:center;background-color:#f9f9f9&#125;.show-toc-btn .btn-bg&#123;margin-top:2px;display:block;width:16px;height:14px;background:url(http://7xtawy.com1.z0.glb.clouddn.com/show.png) no-repeat;-webkit-background-size:100%;-moz-background-size:100%;background-size:100%&#125;.show-toc-btn .btn-text&#123;color:#999;font-size:12px&#125;.show-toc-btn:hover&#123;cursor:pointer&#125;.show-toc-btn:hover .btn-bg&#123;background-position:0 -16px&#125;.show-toc-btn:hover .btn-text&#123;font-size:12px;color:#ea8010&#125;</span><br><span class="line">.toc-article li ol, .toc-article li ul &#123;</span><br><span class="line">    margin-left: 30px;</span><br><span class="line">&#125;</span><br><span class="line">.toc-article ol, .toc-article ul &#123;</span><br><span class="line">    margin: 10px 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>以上代码来自<a href="https://raw.githubusercontent.com/lawlite19/Blog-Back-Up/master/css/main.234bc0.css" target="_blank" rel="noopener">lawlite19_github</a></p>
+<h3 id="2-修改article-ejs"><a href="#2-修改article-ejs" class="headerlink" title="2.修改article.ejs"></a>2.修改article.ejs</h3><p>打开<code>themes\yilia\layout\_partial</code>下面的<code>article.ejs</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"> &lt;!-- 以下两行来自原始文件 --&gt;</span><br><span class="line">     &lt;/header&gt;</span><br><span class="line">   &lt;% &#125; %&gt;</span><br><span class="line"> &lt;!-- 以下内容需要添加，即目录内容部分 --&gt;</span><br><span class="line">&lt;!-- 目录内容 --&gt;</span><br><span class="line">&lt;% if (!index &amp;&amp; post.toc)&#123; %&gt;</span><br><span class="line">	&lt;p class=&quot;show-toc-btn&quot; id=&quot;show-toc-btn&quot; onclick=&quot;showToc();&quot; style=&quot;display:none&quot;&gt;</span><br><span class="line">		  &lt;span class=&quot;btn-bg&quot;&gt;&lt;/span&gt;</span><br><span class="line">		  &lt;span class=&quot;btn-text&quot;&gt;文章导航&lt;/span&gt;</span><br><span class="line">		  &lt;/p&gt;</span><br><span class="line">	&lt;div id=&quot;toc-article&quot; class=&quot;toc-article&quot;&gt;</span><br><span class="line">		&lt;span id=&quot;toc-close&quot; class=&quot;toc-close&quot; title=&quot;隐藏导航&quot; onclick=&quot;showBtn();&quot;&gt;×&lt;/span&gt;</span><br><span class="line">		&lt;strong class=&quot;toc-title&quot;&gt;文章目录&lt;/strong&gt;</span><br><span class="line">		   &lt;%- toc(post.content) %&gt;</span><br><span class="line">		 &lt;/div&gt;</span><br><span class="line">   &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	function showToc()&#123;</span><br><span class="line">		var toc_article = document.getElementById(&quot;toc-article&quot;);</span><br><span class="line">		var show_toc_btn = document.getElementById(&quot;show-toc-btn&quot;);</span><br><span class="line">		toc_article.setAttribute(&quot;style&quot;,&quot;display:block&quot;);</span><br><span class="line">		show_toc_btn.setAttribute(&quot;style&quot;,&quot;display:none&quot;);</span><br><span class="line">		&#125;;</span><br><span class="line">	function showBtn()&#123;</span><br><span class="line">		var toc_article = document.getElementById(&quot;toc-article&quot;);</span><br><span class="line">		var show_toc_btn = document.getElementById(&quot;show-toc-btn&quot;);</span><br><span class="line">		toc_article.setAttribute(&quot;style&quot;,&quot;display:none&quot;);</span><br><span class="line">		show_toc_btn.setAttribute(&quot;style&quot;,&quot;display:block&quot;);</span><br><span class="line">		&#125;;</span><br><span class="line">   &lt;/script&gt;</span><br><span class="line">	  &lt;% &#125; %&gt;		</span><br><span class="line">&lt;!-- 目录内容结束 --&gt;</span><br><span class="line"> &lt;!-- 以下来自原始文件 --&gt;</span><br><span class="line">   &lt;div class=&quot;article-entry&quot; itemprop=&quot;articleBody&quot;&gt;</span><br><span class="line">     &lt;% if (post.excerpt &amp;&amp; index)&#123; %&gt;</span><br><span class="line">       ……</span><br></pre></td></tr></table></figure></p>
+<p>同来自github</p>
+<h3 id="3-文章"><a href="#3-文章" class="headerlink" title="3.文章"></a>3.文章</h3><p>对于需要有右侧悬浮目录的文章，在文章头添加<br><code>toc: true</code><br>现在<code>hexo g -d</code>重新生成部署下，看看效果如何</p>
+<h3 id="4-修改后发现没有标号也不能跳转"><a href="#4-修改后发现没有标号也不能跳转" class="headerlink" title="4.修改后发现没有标号也不能跳转"></a>4.修改后发现没有标号也不能跳转</h3><p>那么 请打开<code>themes\yilia</code>下的<code>_config.yml</code><br>将<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false</span><br><span class="line">toc_hide_index: false</span><br></pre></td></tr></table></figure></p>
+<p>改为<code>false</code>即可 或者你自己在你的标题后手动添加<br>类似：<code>### 3.文章</code> 而不是 <code>### 文章</code></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/uploads/setting_img/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/uploads/setting_img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">code</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">影评</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">伪程序猿</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/09/hexo-catalogue/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/01/02/daily-201801/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">每日小记之2018_01</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -220,9 +352,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: false,
