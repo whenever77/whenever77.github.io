@@ -6,16 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>reading | Whenever的博客</title>
+  <title>书那么多，得用心看 | Whenever的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="reading">
+  <meta name="description" content="嗑研路漫漫 待写图像多标签 博客结构">
+<meta property="og:type" content="website">
+<meta property="og:title" content="书那么多，得用心看">
 <meta property="og:url" content="http://yoursite.com/reading/index.html">
 <meta property="og:site_name" content="Whenever的博客">
+<meta property="og:description" content="嗑研路漫漫 待写图像多标签 博客结构">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-09T08:47:58.069Z">
+<meta property="og:updated_time" content="2018-01-09T09:39:07.100Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="reading">
+<meta name="twitter:title" content="书那么多，得用心看">
+<meta name="twitter:description" content="嗑研路漫漫 待写图像多标签 博客结构">
   
     <link rel="alternative" href="/atom.xml" title="Whenever的博客" type="application/atom+xml">
   
@@ -166,7 +169,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      reading
+      书那么多，得用心看
     </h1>
   
 
@@ -178,11 +181,36 @@
       </header>
     
 	<!-- 目录内容 -->
-			
+	
+		<p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+			  <span class="btn-bg"></span>
+			  <span class="btn-text">文章导航</span>
+			  </p>
+		<div id="toc-article" class="toc-article">
+			<span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+			<strong class="toc-title">文章目录</strong>
+			   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#嗑研路漫漫-待写"><span class="toc-number">1.</span> <span class="toc-text"><a href="#&#x55D1;&#x7814;&#x8DEF;&#x6F2B;&#x6F2B;-&#x5F85;&#x5199;" class="headerlink" title="&#x55D1;&#x7814;&#x8DEF;&#x6F2B;&#x6F2B; &#x5F85;&#x5199;"></a>&#x55D1;&#x7814;&#x8DEF;&#x6F2B;&#x6F2B; &#x5F85;&#x5199;</span></a></li></ol>
+			 </div>
+	   <script type="text/javascript">
+		function showToc(){
+			var toc_article = document.getElementById("toc-article");
+			var show_toc_btn = document.getElementById("show-toc-btn");
+			toc_article.setAttribute("style","display:block");
+			show_toc_btn.setAttribute("style","display:none");
+			};
+		function showBtn(){
+			var toc_article = document.getElementById("toc-article");
+			var show_toc_btn = document.getElementById("show-toc-btn");
+			toc_article.setAttribute("style","display:none");
+			show_toc_btn.setAttribute("style","display:block");
+			};
+	   </script>
+		  		
 	<!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="嗑研路漫漫-待写"><a href="#嗑研路漫漫-待写" class="headerlink" title="嗑研路漫漫 待写"></a>嗑研路漫漫 待写</h2><p><a href="/2017/12/21/multi-label/" title="图像多标签">图像多标签</a> <br><br><a href="/2018/01/02/博客结构/" title="博客结构">博客结构</a> <br></p>
+
       
 
       
@@ -296,6 +324,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#嗑研路漫漫-待写"><span class="toc-number">1.</span> <span class="toc-text"><a href="#&#x55D1;&#x7814;&#x8DEF;&#x6F2B;&#x6F2B;-&#x5F85;&#x5199;" class="headerlink" title="&#x55D1;&#x7814;&#x8DEF;&#x6F2B;&#x6F2B; &#x5F85;&#x5199;"></a>&#x55D1;&#x7814;&#x8DEF;&#x6F2B;&#x6F2B; &#x5F85;&#x5199;</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
