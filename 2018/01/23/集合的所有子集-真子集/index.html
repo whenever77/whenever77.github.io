@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>python下的文件拷贝 | Whenever的博客</title>
+  <title>求集合的所有子集 真子集 | Whenever的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天要在windows下实现文件的拷贝，写了个python，发现实际只要一行 shutil模块copyfile(src, dst) 可以实现文件的拷贝move(src, dst)  可以实现文件的移动    记得要先import    1234import shutil  shutil.copyfile(&amp;quot;a.py&amp;quot;, &amp;quot;b.py&amp;quot;)    # 文件a复制为">
+  <meta name="description" content="求集合的所有子集 真子集 python先把思路一写。刚差点和求集合的全排列混了。这个回头再写。 如何求集合的子集呢，一个集合，所有子集个数为2^n，其中n表示集合的元素个数。由此，可以联想到，通过01编码来实现不重复的求。即，对0 ~ 2^n-1这么多数字，转换成二进制，二进制为1的，保留，二进制为0的，舍弃。 先十进制转二进制，再转string，再转list。再对应位映射。 改天写代码。">
 <meta name="keywords" content="code">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python下的文件拷贝">
-<meta property="og:url" content="http://yoursite.com/2017/12/21/python-copypy-file/index.html">
+<meta property="og:title" content="求集合的所有子集 真子集">
+<meta property="og:url" content="http://yoursite.com/2018/01/23/集合的所有子集-真子集/index.html">
 <meta property="og:site_name" content="Whenever的博客">
-<meta property="og:description" content="今天要在windows下实现文件的拷贝，写了个python，发现实际只要一行 shutil模块copyfile(src, dst) 可以实现文件的拷贝move(src, dst)  可以实现文件的移动    记得要先import    1234import shutil  shutil.copyfile(&amp;quot;a.py&amp;quot;, &amp;quot;b.py&amp;quot;)    # 文件a复制为">
+<meta property="og:description" content="求集合的所有子集 真子集 python先把思路一写。刚差点和求集合的全排列混了。这个回头再写。 如何求集合的子集呢，一个集合，所有子集个数为2^n，其中n表示集合的元素个数。由此，可以联想到，通过01编码来实现不重复的求。即，对0 ~ 2^n-1这么多数字，转换成二进制，二进制为1的，保留，二进制为0的，舍弃。 先十进制转二进制，再转string，再转list。再对应位映射。 改天写代码。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-21T08:33:46.475Z">
+<meta property="og:updated_time" content="2018-01-23T03:45:30.546Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python下的文件拷贝">
-<meta name="twitter:description" content="今天要在windows下实现文件的拷贝，写了个python，发现实际只要一行 shutil模块copyfile(src, dst) 可以实现文件的拷贝move(src, dst)  可以实现文件的移动    记得要先import    1234import shutil  shutil.copyfile(&amp;quot;a.py&amp;quot;, &amp;quot;b.py&amp;quot;)    # 文件a复制为">
+<meta name="twitter:title" content="求集合的所有子集 真子集">
+<meta name="twitter:description" content="求集合的所有子集 真子集 python先把思路一写。刚差点和求集合的全排列混了。这个回头再写。 如何求集合的子集呢，一个集合，所有子集个数为2^n，其中n表示集合的元素个数。由此，可以联想到，通过01编码来实现不重复的求。即，对0 ~ 2^n-1这么多数字，转换成二进制，二进制为1的，保留，二进制为0的，舍弃。 先十进制转二进制，再转string，再转list。再对应位映射。 改天写代码。">
   
     <link rel="alternative" href="/atom.xml" title="Whenever的博客" type="application/atom+xml">
   
@@ -169,20 +169,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-python-copypy-file" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-集合的所有子集-真子集" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      python下的文件拷贝
+      求集合的所有子集 真子集
     </h1>
   
 
         
-        <a href="/2017/12/21/python-copypy-file/" class="archive-article-date">
-  	<time datetime="2017-12-21T08:22:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-21</time>
+        <a href="/2018/01/23/集合的所有子集-真子集/" class="archive-article-date">
+  	<time datetime="2018-01-23T03:38:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
 </a>
         
       </header>
@@ -192,9 +192,10 @@
 	<!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天要在windows下实现文件的拷贝，写了个python，发现实际只要一行</p>
-<h2 id="shutil模块"><a href="#shutil模块" class="headerlink" title="shutil模块"></a>shutil模块</h2><p><code>copyfile(src, dst)</code> 可以实现文件的拷贝<br><code>move(src, dst)</code>  可以实现文件的移动   </p>
-<p>记得要先import<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import shutil  </span><br><span class="line"></span><br><span class="line">shutil.copyfile(&quot;a.py&quot;, &quot;b.py&quot;)    # 文件a复制为文件b    </span><br><span class="line">shutil.move(&quot;a.py&quot;, &quot;../&quot;)         # 文件a移动到父目录</span><br></pre></td></tr></table></figure></p>
+        <h2 id="求集合的所有子集-真子集-python"><a href="#求集合的所有子集-真子集-python" class="headerlink" title="求集合的所有子集 真子集 python"></a>求集合的所有子集 真子集 python</h2><p>先把思路一写。<br>刚差点和求集合的全排列混了。这个回头再写。</p>
+<p>如何求集合的子集呢，一个集合，所有子集个数为<code>2^n</code>，其中n表示集合的元素个数。<br>由此，可以联想到，通过01编码来实现不重复的求。即，对<code>0 ~ 2^n-1</code>这么多数字，转换成二进制，二进制为1的，保留，二进制为0的，舍弃。</p>
+<p>先十进制转二进制，再转string，再转list。再对应位映射。</p>
+<p>改天写代码。</p>
 
       
 
@@ -295,7 +296,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/21/python-copypy-file/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/23/集合的所有子集-真子集/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -309,18 +310,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/12/27/learn-md/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          学习下markdown语法 并且多付诸实践
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/21/daily-201712/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">每日小记之2017_12</div>
+    <a href="/2018/01/17/python-min-edit-distance/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">python 最小编辑距离</div>
       <i class="icon-circle-right"></i>
     </a>
   
