@@ -166,20 +166,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-leetcode-461-Hamming-Distance" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-learn-hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/14/leetcode-461-Hamming-Distance/">leetcode-461 Hamming Distance</a>
+      <a class="article-title" href="/2017/12/19/learn-hexo/">学习下hexo基本语法</a>
     </h1>
   
 
         
-        <a href="/2017/12/14/leetcode-461-Hamming-Distance/" class="archive-article-date">
-  	<time datetime="2017-12-14T02:24:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
+        <a href="/2017/12/19/learn-hexo/" class="archive-article-date">
+  	<time datetime="2017-12-19T12:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-19</time>
 </a>
         
       </header>
@@ -189,19 +189,10 @@
 	<!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>The Hamming distance between two integers is the number of positions at which the corresponding bits are different.</p>
-<p>Given two integers x and y, calculate the Hamming distance.</p>
-<p>Note:<br>0 &lt; x, y &lt; 231.</p>
-<p>Example:</p>
-<p>Input: x = 1, y = 4</p>
-<p>Output: 2</p>
-<p>Explanation:<br>1   (0 0 0 1)<br>4   (0 1 0 0)<br>       ?   ?</p>
-<p>The above arrows point to positions where the corresponding bits are different.</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h2 id="Code-python"><a href="#Code-python" class="headerlink" title="Code  python"></a>Code  python</h2><p>‘’’<br>class Solution(object):<br>    def hammingDistance(self, x, y):<br>        “””<br>        :type x: int<br>        :type y: int<br>        :rtype: int<br>        “””<br>        def func(x, y, dis):<br>            if (x+y) == 0:<br>                return dis<br>            if (x+y)%2 == 1:<br>                dis = dis + 1<br>            return func(x//2, y//2, dis)</p>
-<pre><code>dis = 0
-r = func(x, y, dis)
-return r
-</code></pre><p>‘’’</p>
+        <h2 id="最最常用的两个命令"><a href="#最最常用的两个命令" class="headerlink" title="最最常用的两个命令"></a>最最常用的两个命令</h2><ol>
+<li>在 _post 下面创建文章，相当于默认排版，一般用这个就好<br> <code>hexo new &quot;article_name&quot;</code><br>如果要在 source 下面创建文件夹<br> <code>hexo new page &quot;page_name&quot;</code></li>
+<li>同步到git<br> <code>hexo g -d</code><br>并且，这两个命令的作用是相同的<br><code>hexo generate --deploy</code><br><code>hexo deploy --generate</code><br>缩写也就是<br><code>hexo g -d</code><br><code>hexo d -g</code></li>
+</ol>
 
       
 
@@ -219,7 +210,7 @@ return r
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">leetcode</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">伪程序猿</a>
         		</li>
       		
 		</ul>
@@ -229,7 +220,7 @@ return r
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/14/leetcode-461-Hamming-Distance/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/12/19/learn-hexo/">展开全文 >></a>
         </p>
       
 
@@ -325,6 +316,99 @@ return result
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/12/14/leetcode-338/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-leetcode-461-Hamming-Distance" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/14/leetcode-461-Hamming-Distance/">leetcode-461 Hamming Distance</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/14/leetcode-461-Hamming-Distance/" class="archive-article-date">
+  	<time datetime="2017-12-14T02:24:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
+</a>
+        
+      </header>
+    
+	<!-- 目录内容 -->
+			
+	<!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>The Hamming distance between two integers is the number of positions at which the corresponding bits are different.</p>
+<p>Given two integers x and y, calculate the Hamming distance.</p>
+<p>Note:<br>0 &lt; x, y &lt; 231.</p>
+<p>Example:</p>
+<p>Input: x = 1, y = 4</p>
+<p>Output: 2</p>
+<p>Explanation:<br>1   (0 0 0 1)<br>4   (0 1 0 0)<br>       ?   ?</p>
+<p>The above arrows point to positions where the corresponding bits are different.</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h2 id="Code-python"><a href="#Code-python" class="headerlink" title="Code  python"></a>Code  python</h2><p>‘’’<br>class Solution(object):<br>    def hammingDistance(self, x, y):<br>        “””<br>        :type x: int<br>        :type y: int<br>        :rtype: int<br>        “””<br>        def func(x, y, dis):<br>            if (x+y) == 0:<br>                return dis<br>            if (x+y)%2 == 1:<br>                dis = dis + 1<br>            return func(x//2, y//2, dis)</p>
+<pre><code>dis = 0
+r = func(x, y, dis)
+return r
+</code></pre><p>‘’’</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">code</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">leetcode</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/14/leetcode-461-Hamming-Distance/">展开全文 >></a>
         </p>
       
 
@@ -560,11 +644,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">嗑盐</a>
+                <a href="javascript:void(0)" class="js-tag color2">travel</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">尝试所有</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">嗑盐</a>
               </li>
             
             <div class="clearfix"></div>
